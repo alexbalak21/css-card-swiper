@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Swipe</title>
+    </head>
+    <body>
+        <section class="partners">
+            <h1>Nos partenaires</h1>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <img class="swiper-slide" src="img/partners/CGI.png" />
+                    <img class="swiper-slide" src="img/partners/edf.png" />
+                    <img class="swiper-slide" src="img/partners/havana.png" />
+                    <img
+                        class="swiper-slide"
+                        src="img/partners/Hi-Cannes.png"
+                    />
+                    <img class="swiper-slide" src="img/partners/Idrac.png" />
+                    <img
+                        class="swiper-slide"
+                        src="img/partners/Little-Big-Connection.png"
+                    />
+                    <img class="swiper-slide" src="img/partners/Luckyou.png" />
+                    <img
+                        class="swiper-slide"
+                        src="img/partners/ministere-du-numerique.png"
+                    />
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                <!-- Link Swiper's CSS -->
+                <link
+                    rel="stylesheet"
+                    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+                />
+                <!-- CUSTOM CSS  -->
+                <link rel="stylesheet" href="partners.css" />
+                <!-- Swiper JS -->
+                <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+            </div>
+        </section>
+
+        <!-- Initialize Swiper -->
+        <script>
+            const swiper = new Swiper(".mySwiper", {
+                slidesPerView: 3,
+                spaceBetween: 8,
+                freeMode: true,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            })
+        </script>
+    </body>
+</html>
